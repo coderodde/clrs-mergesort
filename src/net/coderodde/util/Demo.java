@@ -6,7 +6,7 @@ public class Demo {
  
     public static void main(String... args) {
         final int SIZE = 10000000;
-        final long SEED = 1401626831704L;//System.currentTimeMillis();
+        final long SEED = System.currentTimeMillis();
         final Random r = new Random(SEED);
         final Integer[] array1 = Utils.getRandomIntegerArray(SIZE, r);
         final Integer[] array2 = array1.clone();
